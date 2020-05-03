@@ -3,8 +3,6 @@ module Fibo
      fibo
     ) where
 
-import Data.Maybe (fromJust)
-  
 -- use a data type similar to complex numbers. 
 -- The only irrational number are multiples of sqrt 5 
 -- which will cancel away in the closed form.
@@ -37,11 +35,11 @@ pow x 1 = x
 pow x n = x * pow x (n-1)
 
 -- in the closed form the integer part is always 0
-divR5 :: FibNum -> Maybe Integer
-divR5 (FibNum 0 n) = Just n
-divR5 _ = Nothing
+divR5 :: FibNum -> Integer
+divR5 (FibNum 0 n) = n
+divR5 _ = error "non zero integer part"
 
 fibo :: Integer -> Integer
-fibo n = flip div p2 . fromJust $ divR5 nom
+fibo n = flip div p2  $ divR5 nom
   where nom = pow fphi n - pow fpsi n
         p2 = 2^n
