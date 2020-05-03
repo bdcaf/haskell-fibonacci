@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a0fb9a5d2fc888f62ee7cee37850c2f634edd5a43a90203fe5f1b153b90fc33c
+-- hash: 211bcd0bf71cb2521cc2ca929e4d261c130e0b6a67b04380a9e554a491dbb395
 
 name:           fibonacci
 version:        0.1.0.0
@@ -27,7 +27,7 @@ source-repository head
 
 library
   exposed-modules:
-      Lib
+      Fibo
   other-modules:
       Paths_fibonacci
   hs-source-dirs:
