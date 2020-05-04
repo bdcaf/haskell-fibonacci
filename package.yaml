@@ -1,6 +1,6 @@
 name:                fibonacci
 version:             0.1.0.0
-github:              "bdcaf/fibonacci"
+github:              "bdcaf/haskell-fibonacci"
 license:             BSD3
 author:              "Clemens Ager"
 maintainer:          "clemens.ager@uibk.ac.at"
